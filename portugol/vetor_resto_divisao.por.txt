@@ -1,0 +1,20 @@
+/*
+Faça um vetor de tamanho 15 preenchido com o seguinte valor:
+(𝑖 + 5 ∗ 𝑖) %(𝑖 + 1), sendo i a posição do elemento no vetor. 
+Em seguida imprima o vetor na tela.
+*/
+
+programa {
+  funcao inicio() {
+
+  inteiro vetor[15]
+
+  para(inteiro i = 0 ; i < 15 ; i++){
+    //escreva("Digite o ", (i + 1), "º número: ")
+    //leia(vetor[i])
+    vetor[i] = ((i + 5) % (i + 1))
+  }
+
+  escreva(vetor)
+  }
+}
