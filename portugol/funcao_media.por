@@ -1,5 +1,4 @@
 /*
------------------------------- INCOMPLETO -------------------------
 FUNÇÃO
 Faça uma função que receba um vetor de reais e retorne a média dele.
 */
@@ -7,20 +6,22 @@ Faça uma função que receba um vetor de reais e retorne a média dele.
 programa {
 
   real numeros[3]
-  real soma
+  real soma = 0
+  real media = 0
 
   funcao inicio() {
 
     para(inteiro i = 0 ; i < 3 ; i++){ 
     escreva("Digite o ", (i + 1), "º número: ")
-    leia(numero[i])
-    soma += numero[i]
+    leia(numeros[i])
+    soma += numeros[i]
     }
-    escreva(media())
+    escreva("\nSoma: ", soma)
+    escreva("\nMédia: ", media())
   }
 
   funcao media() {
-    real media = (soma / 3)
+    media = (soma / 3)
     retorne media
   }
 
