@@ -1,21 +1,11 @@
 public class Cachorro extends Animal {
-
-    private String late;
-
-    public String getLate() {
-        return late;
+    public Cachorro(String nome, String raca) {
+        setNome(nome);
+        setRaca(raca);
     }
-
-    public void setLate(String late) {
-        this.late = late;
-    }
-
-    @Override
-    public String toString() {
-        return "Cachorro{" +
-                ", Nome -> '" + getNome() + '\'' +
-                ", Raça -> '" + getRaca() + '\'' +
-                ", late -> '" + late + '\'' +
-                '}';
+    public String late() {
+        return "Eu sou " + getNome() +
+                ", da raça " + getRaca() +
+                ", e estou latindo.";
     }
 }
